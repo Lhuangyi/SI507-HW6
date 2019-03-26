@@ -145,7 +145,7 @@ $(document).ready(function(){
 
 	Usually, every jQuery code begins with $(document).ready().
 	The ready() method is used to make a function available after the document is loaded.
-	cite:https://www.w3schools.com/jquery/event_ready.asp
+cite:https://www.w3schools.com/jquery/event_ready.asp
 	Whatever code you write inside the $(document ).ready() method will run once the page DOM is ready to execute JavaScript code.
 
 
@@ -153,7 +153,7 @@ $(document).ready(function(){
 
 	The submit event occurs when a form is submitted. This event can only be used on <form> elements.
 	The submit() method triggers the submit event, or attaches a function to run when a submit event occurs.
-	cite:https://www.w3schools.com/jquery/event_submit.asp
+cite:https://www.w3schools.com/jquery/event_submit.asp
 
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.
