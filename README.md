@@ -57,11 +57,12 @@ Below are a bunch of questions and indications of things to do. For each indicat
 
 ### Names of people you have worked with on this assignment
 
-* **Chenhao Xu (chhaoxu)**
+**Huangyi Li (lhuangyi)**
+* Chenhao Xu (chhaoxu)
 * Huangyi Li (lhuangyi)
 * Xinchen Rao (xrao)
-* Li Zhu (?)
-* Cong Peng (?)
+* Li Zhu (izhuli)
+* Cong Peng (Congp)
 
 ## Questions & code instructions
 
