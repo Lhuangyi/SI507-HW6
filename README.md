@@ -69,9 +69,10 @@ Below are a bunch of questions and indications of things to do. For each indicat
 ### The first questions address the `jsPracticeLab.html` file.
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
-```js
-	Example of a code comment:
+
+Example of a code comment:
 	
+```js
 	// Much code here provided by Colleen Van Lent, edited by Jackie Cohen -- and soon yourself
 	// It is possible you have seen this before -- if so, that's fine, if not, that's fine, too
 
