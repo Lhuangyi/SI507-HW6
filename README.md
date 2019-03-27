@@ -59,7 +59,6 @@ Below are a bunch of questions and indications of things to do. For each indicat
 
 * **Huangyi Li (lhuangyi)**
 * Chenhao Xu (chhaoxu)
-* Huangyi Li (lhuangyi)
 * Xinchen Rao (xrao)
 * Li Zhu (izhuli)
 * Cong Peng (Congp)
