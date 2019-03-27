@@ -57,7 +57,7 @@ Below are a bunch of questions and indications of things to do. For each indicat
 
 ### Names of people you have worked with on this assignment
 
-**Huangyi Li (lhuangyi)**
+* **Huangyi Li (lhuangyi)**
 * Chenhao Xu (chhaoxu)
 * Huangyi Li (lhuangyi)
 * Xinchen Rao (xrao)
