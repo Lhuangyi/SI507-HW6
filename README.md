@@ -70,6 +70,8 @@ Below are a bunch of questions and indications of things to do. For each indicat
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
 ```js
+	Example of a code comment:
+	
 	// Much code here provided by Colleen Van Lent, edited by Jackie Cohen -- and soon yourself
 	// It is possible you have seen this before -- if so, that's fine, if not, that's fine, too
 
@@ -96,16 +98,14 @@ I prefer to use console.log because I need to hit 'ok' to close the pop-up windo
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
 
 ```js
+I have to comment the following code:
 	alert("hello");
 ```
 
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
 
-Change the code `document.querySelector('h1').innerHTML = "A name";` in `function displayInformation ()` to `document.querySelector('h1').innerHTML = "Chenhao Xu";`.
+Change the code `document.querySelector('h1').innerHTML = "A name";` in `function displayInformation ()` to `document.querySelector('h1').innerHTML = "Huangyi Li";`.
 
-* **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
-
-Change the code 'document.querySelector('h1').innerHTML = "A name";' in the function 'function displayInformation ( )' to the code 'document.querySelector('h1').innerHTML = "Chenhao Xu";', for this is the commend showing 'A name' on the website.
 
 * **What does the word `document` represent in this code? Explain briefly.**
 
