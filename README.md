@@ -68,9 +68,6 @@ Below are a bunch of questions and indications of things to do. For each indicat
 ### The first questions address the `jsPracticeLab.html` file.
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
-
-Example of a code comment:
-	
 ```js
 	// Much code here provided by Colleen Van Lent, edited by Jackie Cohen -- and soon yourself
 	// It is possible you have seen this before -- if so, that's fine, if not, that's fine, too
@@ -84,50 +81,54 @@ Example of a code comment:
 	//When someone uses the keyboard shortcut to copy the words "University of Michigan" then add the words "Go Blue" to the final div.  Each occurence should be on a separate line.
 	//Note that this code must be outside the other function above
 ```
-The characters I have to put before a comment is "//".
+The characters before a comment is "//".
 
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
 
-The tag ` <script> </script> ` tells the browser that I am running a Javascript program. The first function, alert, runs when the file is open in the browser. Then the second function and the third funtion, console.log and displayInformation, run after I click 'ok' on the pop-up window. The information printed with console.log can be seen in console. The fourth and the fifth funtion run after the program receives the action of user to copy text or click the button.
+The tag ` <script> </script> ` is use to define Javascript. In the Javascript program, there are three functions. The first function is alert which runs as soon as the file is open in the browser. Then the second function, console.log and the third funtion, displayInformation, run after the pop-up window is close by clicking 'ok' on that. Console.log can print information in console. CopyFunction and handleClick run after the user emits the action copy text or click the button.
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
 
-One is console.log and the other is alert.
-I prefer to use console.log because I need to hit 'ok' to close the pop-up window of alert. In this way, it doesn't affect the use even though the developer forgets to remove it from debugging enviornment. Besides, console.log can show the object with values, where alert requires the developer to traverse the object first.
+<p>Console.log and alert.</p>
+<p>Console.log is better because the pop-up window of alert can only be closed by hitting 'ok' to. In this way, if it doesn't be removed it affects the user. But console.log doesn't affect the user even though the developer forgets to remove it from debugging enviornment. In addition, console.log shows the object with values, where alert requires the developer to traverse the object first.</p>
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
 
 ```js
-I have to comment the following code:
 	alert("hello");
 ```
 
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
 
-Change the code `document.querySelector('h1').innerHTML = "A name";` in `function displayInformation ()` to `document.querySelector('h1').innerHTML = "Huangyi Li";`.
-
+Change the code `document.querySelector('h1').innerHTML = "A name";` in `function displayInformation ()` to `document.querySelector('h1').innerHTML = "Li Zhu";`.
 
 * **What does the word `document` represent in this code? Explain briefly.**
 
-The global object "document" represents the HTML document which is displayed in the current browser window.
-When html document is loaded in the browser, it becomes a document object. It is the root element that represents the html document. It has properties and methods. By the help of document object, we can add dynamic content to the web page.
+`document` is a global object, which represents the html document in the current browser window with specific properties and methods like querySelector. With these properties and methods, we can add dynamic content to the web page.</p>
 
 * **What is happening in line 12 (`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
 
-The querySelector( ) method returns the first child element that matches a specified CSS selector(s) of an element while the getElementsByTagName( ) method returns a collection of all elements in the document with the specified tag name' li ' and the length property determines the number of elements with the specified tag name. So this commend returns the number of list items for this page when matching the id "items".
+The querySelector() is a method. And '#items' is a CSS ID selector. It returns the first child element which has id 'items'. &lt;li&gt; in getElementsByTagName() is the descendant selector. The getElementsByTagName() method returns the collection of all elements in the document with the tag &lt;li&gt; and the .length after it returns the number of elements with &lt;li&gt;. So line 12 is to change the content in first element with tag &lt;id = 'item'&gt; to the number of element with tag &lt;li&gt;.
 
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
 
-It would be white without any other colors.
+It would be white，which is the default color of html file..
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
 
-For the border, we set the color of the border by 'border: 3px solid #FFFFFF'. I changed the background code to 'background-color: #0000ff' to get blue one.
+The reason why there are a couple of gray boxes with a different colored border is that there are two elements with <p></P> tags where border color is set as white #FFFFFF. Backgrounds of them are set as grey by `p{ background-color: #b3b3b3;}`
+To change the color of the border, we can set the color of the border by `border: 3px solid #b3b3b3(the color of border)`. To change the color of the background, we can set the color of the border by `background-color: #b3b3b3;`.
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
 
-We can find that the main part of this is the copyfunction.I replaced the 'Go Blue' with 'O Canada' and accordingly change the name of university in line 67, which determining the object we copy.
+The copy effect is controlled by copyfunction function. Put document.querySelector('#canada').innerHTML += "O Canada<br>" in it,which means that the content in element with id = 'canada' changes to "O Canada<br>". Besides, I add 
+```js
+<div id="canada">
+
+</div>
+```
+to the html file, which is the element with id = 'canada'.
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
@@ -136,29 +137,27 @@ function handleClick(){
 	alert("hello");
 }
 ```
-The original code declares a "function" named "handleClick()."
-When the "function" is called, a "function alert()" runs and you will see a text box written "hello".
+The function "handleClick()" means when the user clicks the button, code inside it runs. When the user clicks the button, the function alert() runs and the pop-up window with "hello" will show.
 
 **and**
 
 ```js
 <button onclick=handleClick() id="wow-button">Wow</button>
 ```
-This part of code creates a button named "Wow" and when clicks the button "Wow", the "function handleClick()" will be called.
-Once the "function" handleClick is called, you will see a text box written "hello".
+This part of code creates a button named "Wow" bound with handleClick() function. When the user clicks the button, the function is called.
 
 * **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
 
-Based on the previous knowledge, I add 2 lines to relize this, firstly I add one line:
+Based on the previous knowledge, I add 2 lines to realize this, firstly I add one line:
 ```js
  <input type="button" onclick="myFunction()" value="Spring Equinox 2019">  
  ```
- it can create a "Spring Equinox 2019" button and relate this button to a click incident.
- Then I add one line:
- ```js
- myFunction(){alert("March 20, 2019");}
- ```
- it creates a function to define the onclick incident.
+It can create a "Spring Equinox 2019" button bound to a click incident.
+Then I add one line:
+```js
+myFunction(){alert("March 20, 2019");}
+```
+It creates a function to define the onclick incident with alert() function which creates a pop-up window.
 
 
 ### The next few questions address the `jquerylib_submit_example.html` file.
@@ -194,7 +193,7 @@ else:
 ```
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
 
-That means the speed from showing up to disappearance. In this case, it is 10000 millisecond.
+That means the time from showing up to disappearance. In this case, it is 10000 millisecond.
 
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
 
