@@ -100,7 +100,7 @@ The tag ` <script> </script> ` is use to define Javascript. In the Javascript pr
 
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
 
-Change the code `document.querySelector('h1').innerHTML = "A name";` in `function displayInformation ()` to `document.querySelector('h1').innerHTML = "Li Zhu";`.
+Change the code `document.querySelector('h1').innerHTML = "A name";` in `function displayInformation ()` to `document.querySelector('h1').innerHTML = "Huangyi Li";`.
 
 * **What does the word `document` represent in this code? Explain briefly.**
 
